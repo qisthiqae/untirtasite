@@ -1,0 +1,55 @@
+{% load static %}
+<div class="jumbotron">
+    <center>
+    <div class="p-5 mb-4 bg-success rounded-3" style="height:600px">
+        <div class="container-fluid py-5">
+          <img src="{% static 'img/image001.png'%}" style="width:100px;height:100px" alt="Log Untirta">
+          <h1 class="display-4 fw-bold">Universitas Sultan Ageng Tirtayasa</h1>
+          <p class="col-md-8 fs-4">“Inovasi, kolaborasi dan harmonisasi UNTIRTA Jawara untuk Indonesia maju”</p>
+          <button class="btn btn-dark btn-lg" type="button" href="/profil/templates/tentang.html">Tentang Untirta</button>
+        </div>
+    </div>
+    </center>
+</div>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="mainNav"> 
+  <div class="container-fluid">
+    <a class="navbar-brand" aria-current="page" href="/untirtasite">
+      <img style="height:32px" src="{% static 'img/image001.png' %}" alt="">
+      UNTIRTA</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Beranda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/tentang">Tentang Untirta</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/lokasi">Lokasi</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#fakultas" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Fakultas di Untirta
+          </a>
+          <ul class="dropdown-menu bg-white">
+            <li><a class="dropdown-item" href="/faperta">Faperta</a></li>
+            <li><a class="dropdown-item" href="/feb">FEB</a></li>
+            <li><a class="dropdown-item" href="/fh">FH</a></li>
+            <li><a class="dropdown-item" href="/fisip">FISIP</a></li>
+            <li><a class="dropdown-item" href="/fk">FK</a></li>
+            <li><a class="dropdown-item" href="/fkip">FKIP</a></li>
+            <li><a class="dropdown-item" href="/ft">FT</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/pascasarjana">Pascasarjana</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/profil">Profil</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -16,7 +16,7 @@ Including another URLconf
 import imp
 from django.contrib import admin
 from django.urls import path
-from faperta.views import isifaperta
+from faperta.views import isifaperta, tambah_dosen, isidatafap
 from feb.views import isifeb
 from fh.views import isifh
 from fisip.views import isifisip
@@ -32,6 +32,8 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('faperta/', isifaperta),
+    path('tambah-dosen/', tambah_dosen ),
+    path('datafaperta/', isidatafap),
     path('feb/', isifeb),
     path('fh/', isifh),
     path('fisip/', isifisip),
